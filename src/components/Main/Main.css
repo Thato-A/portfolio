@@ -1,0 +1,28 @@
+.main-container {
+  background: linear-gradient(135deg, #f8e9ff, #e8f0ff);
+  text-align: center;
+}
+
+.projects-section {
+  margin: 0 auto;
+}
+
+.projects-title {
+  display: inline-block;
+  background: #ede9fe;
+  color: #7e22ce;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(168, 85, 247, 0.2);
+}
+
+.projects-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
