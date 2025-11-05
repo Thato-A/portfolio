@@ -77,7 +77,7 @@ function Projects() {
         modules={[Navigation, Autoplay]}
         centeredSlides={true}
         slidesPerView={3}
-        spaceBetween={60}
+        spaceBetween={50}
         loop={true}
         autoplay={{ delay: 4500, disableOnInteraction: false }}
         navigation
