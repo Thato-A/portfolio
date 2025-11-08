@@ -1,5 +1,4 @@
 .skills {
-  background: linear-gradient(135deg, #f8e9ff, #e8f0ff);
   color: #222;
   padding: 80px 10%;
   text-align: center;
@@ -12,7 +11,12 @@
 
 .skills__subtitle {
   font-size: 2.5rem;
-  margin-top: 10px;
+  margin: 10px auto 0;
+  color: rgb(231, 168, 195);
+  background: #54575d;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
 }
 
 .skills__description {
@@ -50,7 +54,7 @@
   gap: 20px;
 }
 
-.skill-card {
+.skill__card {
   background: #54575d;
   color: #f0e9e9;
   border-radius: 10px;
@@ -59,9 +63,10 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.skill-card:hover {
+.skill__card:hover {
   transform: translateY(-5px);
-  background: #7a4d64;
+  /* background: #7a4d64; */
+  background: #39e7ca;
   color: #fff;
 }
 
@@ -90,8 +95,11 @@
 }
 
 .expertise__item h4 {
-  color: #ff007f;
-  margin-bottom: 10px;
+  background-color: #ff007f;
+  border-radius: 10px;
+  margin: 0 0 10px;
+  width: fit-content;
+  padding: 8px;
 }
 
 .tags {

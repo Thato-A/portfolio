@@ -52,7 +52,7 @@ function Skills() {
               { icon: <SiKeystone />, name: "Keystone" },
               { icon: <FaDocker />, name: "Docker" },
             ].map((skill, i) => (
-              <div key={i} className="skill-card">
+              <div key={i} className="skill__card">
                 <div className="skill-icon">{skill.icon}</div>
                 <p>{skill.name}</p>
               </div>

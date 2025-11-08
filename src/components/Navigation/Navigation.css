@@ -12,12 +12,17 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #35081d;
+  background: #39e7ca;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
 .nav__links {
   list-style: none;
   display: flex;
   gap: 2rem;
+  padding: 0 30px;
 }
 
 .nav__links a {
@@ -25,6 +30,9 @@
   text-decoration: none;
   font-size: 1rem;
   transition: 0.3s;
+  background: #39e7ca;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .nav__links a:hover {

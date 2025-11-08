@@ -1,14 +1,21 @@
 .projects {
   text-align: center;
   padding: 80px 0;
-  background-color: #1b1b2f;
   color: #f1f1f1;
 }
 
-.project-title {
+.project__title {
   font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #b794f4;
+  margin: 0 auto 30px;
+  color: rgb(231, 168, 195);
+  background: #54575d;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.project__subtext {
+  color: #222;
 }
 
 .filter-buttons {
@@ -20,7 +27,7 @@
   padding: 10px 20px;
   border: 1px solid #b794f4;
   background: transparent;
-  color: #f1f1f1;
+  color: #080000c7;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
@@ -32,9 +39,9 @@
   color: #1b1b2f;
 }
 
-.project-card {
-  width: 400px;
-  height: 550px;
+.project__card {
+  width: 550px;
+  height: 500px;
   border: 2px solid #b794f4;
   border-radius: 16px;
   overflow: hidden;
@@ -42,26 +49,26 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-.project-card:hover {
+.project__card:hover {
   transform: translateY(-5px);
 }
 
-.project-card img {
+.project__card img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
 }
 
-.project-info {
+.project__info {
   padding: 20px;
 }
 
-.project-info h3 {
+.project__info h3 {
   color: #b794f4;
   margin-bottom: 10px;
 }
 
-.project-info p {
+.project__info p {
   color: #dcdcdc;
   font-size: 0.95rem;
   margin-bottom: 15px;
@@ -78,7 +85,7 @@
   margin: 3px;
 }
 
-.project-links a {
+.project__links a {
   display: inline-block;
   margin: 10px;
   padding: 8px 16px;
@@ -89,16 +96,16 @@
   transition: 0.3s;
 }
 
-.project-links a:hover {
+.project__links a:hover {
   background-color: #b794f4;
   color: #1b1b2f;
 }
 
-.project-swiper {
+.project__swiper {
   width: 80%;
   margin: auto;
-  padding-bottom: 50px;
-  perspective: 1200px;
+  padding: 50px 0;
+  /* perspective: 1200px; */
 }
 
 .project-swiper .swiper-wrapper {
@@ -106,8 +113,8 @@
 }
 
 .swiper-slide {
-  width: 420px;
-  height: 550px;
+  width: 400px;
+  height: 600px;
   transition: transform 0.8s ease, opacity 0.6s ease;
   transform-origin: center;
   margin: 0 30px;

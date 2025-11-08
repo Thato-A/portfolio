@@ -59,7 +59,11 @@ function Projects() {
       id="projects"
       className={`projects reveal-section ${isVisible ? "visible" : ""}`}
     >
-      <h2 className="project-title">My Work</h2>
+      <h2 className="project__title">My Work</h2>
+      <p className="project__subtext">
+        Here are some of the projects I’ve completed, along with a few that I’m
+        currently bringing to life.
+      </p>
 
       <div className="filter-buttons">
         {["All", "Frontend", "Full Stack", "Backend"].map((cat) => (
@@ -75,19 +79,20 @@ function Projects() {
 
       <Swiper
         modules={[Navigation, Autoplay]}
+        effect={"coverflow"}
         centeredSlides={true}
-        slidesPerView={3}
-        spaceBetween={50}
+        slidesPerView={"auto"}
+        spaceBetween={10}
         loop={true}
         autoplay={{ delay: 4500, disableOnInteraction: false }}
         navigation
-        className="project-swiper"
+        className="project__swiper"
       >
         {filteredProjects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="project-card">
+            <div className="project__card">
               <img src={project.image} alt={project.title} />
-              <div className="project-info">
+              <div className="project__info">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="tech-stack">
@@ -95,7 +100,7 @@ function Projects() {
                     <span key={i}>{t}</span>
                   ))}
                 </div>
-                <div className="project-links">
+                <div className="project__links">
                   <a href={project.live} target="_blank" rel="noreferrer">
                     Live Demo
                   </a>

@@ -1,0 +1,31 @@
+.footer {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #f3f3f3;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(231, 168, 195, 0.4);
+  margin-top: auto;
+  background: #54575d;
+}
+
+.footer__links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  color: rgb(231, 168, 195);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
