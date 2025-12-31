@@ -15,6 +15,7 @@ import Turbo from "../../assets/turbo-guacomole.png";
 import News from "../../assets/news-explorer.png";
 import OC from "../../assets/wildlife-oc.png";
 import Netflix from "../../assets/netflix1.png";
+import SM from "../../assets/speak-mzansi.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./Projects.css";
@@ -32,7 +33,7 @@ const projectsData = [
   {
     title: "Netflix Clone",
     description:
-      "A Netflix clone website where user can find movies and shows to watch",
+      "A responsive web application that replicates the core user experience of Netflix, allowing users to browse movies and TV shows, view detailed content information, and enjoy a smooth, modern UI.",
     tech: ["React", "Tailwind", "MongoDB", "Node.js", "TMDB API"],
     type: "Full Stack",
     image: Netflix,
@@ -79,7 +80,7 @@ const projectsData = [
   {
     title: "OC Wildland",
     description:
-      "A donation platform supporting safe environments and education using Node.js, MongoDB, and JWT.",
+      "a full-featured web platform designed to support wildfire education and preparedness. The site allows users to browse and purchase fire rescue and wildland safety classes, while also offering branded merchandise to support the organization’s mission.",
     tech: ["Node.js", "Keystone", "Tailwind", "Typescript", "Docker"],
     type: "In Development",
     image: OC,
@@ -93,6 +94,14 @@ const projectsData = [
     image: Glow,
     live: "https://glowgenic.netlify.app/",
     code: "https://github.com/Thato-A/glow-genic",
+  },
+  {
+    title: "Speak Mzansi",
+    description:
+      "a full-stack language learning web application designed to help users learn South Africa’s 11 official languages by connecting them with native-speaking tutors while also exploring cultural insights and local destinations.",
+    tech: ["Node.js", "React", "Tailwind", "MongoDB"],
+    type: "In Development",
+    image: SM,
   },
 ];
 
