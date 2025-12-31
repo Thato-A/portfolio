@@ -27,10 +27,10 @@ function ContactModal({ isOpen, onClose }) {
 
     emailjs
       .send(
-        "service_fkwnzfb",
-        "template_czmnu2s",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formData,
-        "YZZwzT18L0T6ajjDE"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
