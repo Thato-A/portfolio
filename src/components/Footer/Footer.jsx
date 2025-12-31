@@ -2,8 +2,10 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <p>© {new Date().getFullYear()} Thato. Built with ❤️ and React.</p>
+
+      <p>Lets connect</p>
 
       <div className="footer__links">
         <a href="mailto:thatoanderson92@gmail.com" className="footer__link">

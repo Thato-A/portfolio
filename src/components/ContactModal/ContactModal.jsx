@@ -52,7 +52,8 @@ function ContactModal({ isOpen, onClose }) {
         </button>
         <h2 className="modal__heading">Send Me a Message</h2>
         <p className="modal__subtext">
-          Fill out the form below and I’ll respond within 24 hours.
+          Fill out the form below and I’ll respond within 24 hours or email me
+          directly at thatoanderson92@gmail.com
         </p>
 
         <form onSubmit={handleSubmit} className="modal__form">

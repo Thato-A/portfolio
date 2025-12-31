@@ -12,7 +12,6 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Modal content */
 .modal__content {
   background: #fff;
   border-radius: 16px;
@@ -29,7 +28,6 @@
   background-clip: content-box, border-box;
 }
 
-/* Close button */
 .modal__close-btn {
   position: absolute;
   top: 15px;

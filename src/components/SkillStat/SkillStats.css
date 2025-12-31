@@ -1,0 +1,51 @@
+.skills-stats {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #54575d;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 20px;
+}
+
+.stat h2 {
+  font-size: 3rem;
+  color: #ff007f;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  color: #54575d;
+  font-size: 1rem;
+}
+
+.stats-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats-divider .line {
+  width: 60px;
+  height: 1px;
+  background: #ff007f;
+}
+
+.stats-divider .dot {
+  width: 8px;
+  height: 8px;
+  background: #ff007f;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .stats-container {
+    gap: 120px;
+  }
+}

@@ -54,6 +54,12 @@
   gap: 20px;
 }
 
+.skills__cards-soft {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 50px;
+}
+
 .skill__card {
   background: #54575d;
   color: #f0e9e9;
@@ -65,7 +71,6 @@
 
 .skill__card:hover {
   transform: translateY(-5px);
-  /* background: #7a4d64; */
   background: #39e7ca;
   color: #fff;
 }
@@ -104,6 +109,10 @@
 
 .tags {
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .tags span {
@@ -112,4 +121,116 @@
   border-radius: 5px;
   font-size: 0.85rem;
   margin-right: 5px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .skills {
+    padding: 60px 5%;
+  }
+
+  .skills__subtitle {
+    font-size: 2rem;
+    padding: 8px 16px;
+  }
+
+  .skills__description {
+    font-size: 0.95rem;
+    max-width: 90%;
+    margin: 0 auto 40px;
+  }
+
+  .skills__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .skills__category {
+    width: 90%;
+    min-width: unset;
+    padding: 25px;
+  }
+
+  .skills__category h3 {
+    text-align: center;
+  }
+
+  .skills__cards,
+  .skills__cards-soft {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 25px;
+  }
+
+  .expertise__item {
+    text-align: center;
+  }
+
+  .expertise__item h4 {
+    margin: 0 auto 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 50px 1.5rem;
+  }
+
+  .skills__subtitle {
+    font-size: 1.6rem;
+    padding: 6px 12px;
+  }
+
+  .skills__description {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .skills__grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills__category {
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    min-width: unset;
+  }
+
+  .skills__category h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skills__cards,
+  .skills__cards-soft {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .skill__card {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .expertise {
+    gap: 20px;
+  }
+
+  .expertise__item {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .expertise__item h4 {
+    margin: 0 auto 10px;
+    font-size: 1rem;
+  }
+
+  .tags span {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
 }

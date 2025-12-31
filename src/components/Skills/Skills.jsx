@@ -16,6 +16,7 @@ import {
   SiKeystone,
 } from "react-icons/si";
 import useScrollReveal from "../../hooks/useScrollReveal";
+import SkillStats from "../SkillStat/SkillStats";
 
 function Skills() {
   const [ref, isVisible] = useScrollReveal();
@@ -88,8 +89,11 @@ function Skills() {
                 <span>Node.js</span>
                 <span>Express.js</span>
                 <span>RESTful APIs</span>
+                <span>GraphQL</span>
                 <span>Keystone</span>
                 <span>Docker</span>
+                <span>JWT</span>
+                <span>Middleware</span>
               </div>
             </div>
 
@@ -105,6 +109,17 @@ function Skills() {
             </div>
 
             <div className="expertise__item">
+              <h4>Testing & Quality Assurance</h4>
+              <p className="expertise__description">
+                Unit and integration testing, API testing and validation.
+              </p>
+              <div className="tags">
+                <span>Jest</span>
+                <span>Postman</span>
+              </div>
+            </div>
+
+            <div className="expertise__item">
               <h4>Version Control & Deployment</h4>
               <p className="expertise__description">
                 Managing source control and deploying applications efficiently.
@@ -113,11 +128,37 @@ function Skills() {
                 <span>Git</span>
                 <span>GitHub</span>
                 <span>Cloud Deployment</span>
+                <span>Render</span>
+                <span>Netlify</span>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="skills__category">
+          <h3>Soft Skills</h3>
+          <div className="skills__cards-soft">
+            {[
+              { icon: "💬", name: "Communication" },
+              { icon: "🎯", name: "Attention to detail" },
+              { icon: "🤝", name: "Collaboration" },
+              { icon: "🧩", name: "Problem-solving" },
+              { icon: "⚙️", name: "Adaptability" },
+              { icon: "💪", name: "Accountability" },
+              { icon: "⏰", name: "Time Management" },
+              { icon: "💡", name: "Empathy" },
+              { icon: "🔍", name: "Curiosity" },
+              { icon: "🔥", name: "Resilience" },
+            ].map((skill, i) => (
+              <div key={i} className="skill__card">
+                <div className="skill-icon">{skill.icon}</div>
+                <p>{skill.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+      <SkillStats />
     </section>
   );
 }

@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className="header__container">
-      <Navigation />
+      <Navigation openModal={openModal} />
 
       <div className="availability-badge pulse">
         Available for new opportunities
@@ -46,7 +46,7 @@ export default function Header() {
       </p>
 
       <div className="button-group">
-        <a href="/ThatoAResume.pdf" className="btn download">
+        <a href="/Thato A Resume.pdf" className="btn download">
           <HiOutlineDownload />
           <span>Download Resume</span>
         </a>
