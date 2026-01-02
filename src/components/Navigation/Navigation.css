@@ -112,3 +112,14 @@
     color: #b3a4ff;
   }
 }
+
+@media (max-width: 600px) {
+  .hamburger {
+    margin: 0;
+  }
+
+  .nav__logo {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+}

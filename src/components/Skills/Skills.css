@@ -234,3 +234,36 @@
     padding: 4px 8px;
   }
 }
+
+/* 🔒 Fix mobile centering issue ONLY for very small screens */
+@media (max-width: 489px) {
+  .skills {
+    overflow-x: hidden;
+  }
+
+  .skills__grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .skills__category {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    align-self: center;
+    height: auto;
+  }
+
+  .skills__cards,
+  .skills__cards-soft {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .skill__card,
+  .expertise__item,
+  .tags span {
+    max-width: 100%;
+  }
+}

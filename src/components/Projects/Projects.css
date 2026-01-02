@@ -16,6 +16,7 @@
 
 .project__subtext {
   color: #222;
+  padding: 0 10px;
 }
 
 .filter-buttons {
@@ -238,5 +239,17 @@
   .project__links a {
     padding: 6px 12px;
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 458px) {
+  .filter-buttons button {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 429px) {
+  .filter-buttons button {
+    margin: 0 2px;
   }
 }
