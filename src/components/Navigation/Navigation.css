@@ -66,6 +66,10 @@
   transform: rotate(-45deg) translateY(-9px);
 }
 
+body.modal-open .nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;

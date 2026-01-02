@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./ContactModal.css";
 import emailjs from "emailjs-com";
 import { FaPaperPlane } from "react-icons/fa";
@@ -11,6 +11,16 @@ function ContactModal({ isOpen, onClose }) {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+
+    return () => document.body.classList.remove("modal-open");
+  }, [isOpen]);
 
   const closeModal = () => {
     onClose();

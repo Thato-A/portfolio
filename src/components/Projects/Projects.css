@@ -79,11 +79,6 @@
   margin: 0;
   font-size: 0.92rem;
   line-height: 1.35;
-
-  /* display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden; */
 }
 
 .tech-stack span {
@@ -174,29 +169,6 @@
     width: 420px;
     height: auto;
   }
-
-  /* .project__card img {
-    height: 170px;
-  }
-
-  .project__info h3 {
-    font-size: 1.1rem;
-  }
-
-  .project__info p {
-    font-size: 0.75rem;
-    -webkit-line-clamp: 3;
-  }
-
-  .tech-stack span {
-    font-size: 0.5rem;
-    padding: 3px 8px;
-  }
-
-  .project__links a {
-    font-size: 0.75rem;
-    padding: 7px 12px;
-  } */
 }
 
 @media (max-width: 600px) {

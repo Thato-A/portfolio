@@ -27,8 +27,8 @@
 
 .skills__grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 50px;
 }
 
@@ -39,6 +39,8 @@
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+  width: 100%;
+  max-width: 1200px;
 }
 
 .skills__category h3 {
@@ -235,7 +237,6 @@
   }
 }
 
-/* 🔒 Fix mobile centering issue ONLY for very small screens */
 @media (max-width: 489px) {
   .skills {
     overflow-x: hidden;
