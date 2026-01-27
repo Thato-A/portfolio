@@ -104,6 +104,7 @@ function Skills() {
               </p>
               <div className="tags">
                 <span>MongoDB</span>
+                <span>BigQuery</span>
                 <span>PostgreSQL</span>
               </div>
             </div>
@@ -130,6 +131,7 @@ function Skills() {
                 <span>Cloud Deployment</span>
                 <span>Render</span>
                 <span>Netlify</span>
+                <span>Vercel</span>
               </div>
             </div>
           </div>
